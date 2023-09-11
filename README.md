@@ -1,6 +1,6 @@
 # 
 <p align="center">
-  <img src="https://github.com/Kirbyy1/riot-account-generator/blob/main/assets/rglogo.pngg" />
+  <img src="https://github.com/Kirbyy1/riot-account-generator/blob/main/assets/rglogo.png" />
 </p>
 
 
