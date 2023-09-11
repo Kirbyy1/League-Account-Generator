@@ -71,7 +71,7 @@ class GenerateAccount:
             logging.error(f"Error getting rqdata and cookies: {str(e)}")
             raise
 
-    def generate_account(self, password, username, region, date_of_birth="2001-12-06", email="xesxyboy32@gmail.com"):
+    def generate_account(self, password, username, region, date_of_birth="2001-12-06", email="xes22scboy32@gmail.com"):
         """
         Generates an account with the given parameters.
 
