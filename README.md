@@ -1,4 +1,8 @@
-# ![Riot Account Generator](https://github.com/Kirbyy1/riot-account-generator/blob/main/assets/rglogo.png)
+# 
+<p align="center">
+  <img src="https://github.com/Kirbyy1/riot-account-generator/blob/main/assets/rglogo.pngg" />
+</p>
+
 
 This is a simple account generator application built using Python and Tkinter. It allows you to generate multiple accounts with randomized usernames and passwords for various regions.
 
