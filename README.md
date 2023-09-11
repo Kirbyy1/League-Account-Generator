@@ -12,6 +12,11 @@ This is a simple account generator application built using Python and Tkinter. I
 -   Select the region for the generated accounts
 -   View the generated accounts in a treeview
 -   Save the generated accounts to a text file
-- ![image](https://github.com/Kirbyy1/riot-account-generator/blob/main/image.png)
+- It works for every region
+
+
+<p align="center">
+  <img src="https://github.com/Kirbyy1/riot-account-generator/blob/main/image.png" />
+</p>
 
 
