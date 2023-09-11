@@ -20,7 +20,10 @@ This is a simple account generator application built using Python and Tkinter. I
 </p>
 
 ##
-To use the Account Generator application, you will need a valid CAPMONSTER API key. The CAPMONSTER API key is used for CAPTCHA solving service, which is required for generating accounts.
+Please note that this Account Generator application is intended for educational purposes only. It is meant to demonstrate the usage of Python, Tkinter, and other relevant modules for building a simple GUI application.
 
-Please make sure you have a valid CAPMONSTER API key before running the application. If you don't have an API key, you can leave the "CAPMONSTER API Key" field empty, but the CAPTCHA solving functionality will not be available.
+It is important to use this application responsibly and in compliance with any applicable laws and regulations. Generating accounts for online games or any other services without proper authorization is not recommended and may violate the terms of service of those services.
+
+The primary purpose of this application is to showcase programming concepts and should not be used for any malicious or unauthorized activities.
+
 
