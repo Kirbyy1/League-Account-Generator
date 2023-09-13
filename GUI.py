@@ -9,6 +9,7 @@ from tkinter import messagebox
 from tkinter import ttk
 
 from PIL import ImageTk, Image
+from tkextrafont import Font
 
 from account_generator import GenerateAccount
 
@@ -84,16 +85,6 @@ def save_accounts():
         messagebox.showinfo("Accounts Saved", "Accounts saved successfully!")
 
 
-def save_api_key():
-    api_key = api_key_entry.get()
-    if api_key:
-        with open("api_key.txt", "w") as file:
-            file.write(api_key)
-        messagebox.showinfo("API Key Saved", "API Key saved successfully!")
-    else:
-        messagebox.showerror("Invalid Input", "Please enter a valid API Key.")
-
-
 # This function can get temp path for your resource file
 # relative_path is your icon file name
 def resource_path(relative_path):
@@ -122,7 +113,7 @@ image = Image.open(image_path)
 # Resize the image
 width, height = 170, 170  # Set the desired width and height
 image = image.resize((width, height))
-
+font1 = Font(file='assets/Nexa Bold (1).ttf', family="Nexa")
 # Convert the image to Tkinter-compatible format
 tk_image = ImageTk.PhotoImage(image)
 
@@ -130,7 +121,7 @@ tk_image = ImageTk.PhotoImage(image)
 image_label = tk.Label(window, image=tk_image)
 
 # Pack the label to display it in the window
-image_label.pack()
+image_label.grid(row=0, column=0, padx=160, pady=10, sticky="nsew")
 
 # Create the style for the elements
 style = tk.ttk.Style()
@@ -139,8 +130,9 @@ style.configure('TLabel', font=('Arial', 14))
 style.configure('TCombobox', font=('Arial', 14))
 
 # Create the widgets
-num_accounts_label = tk.ttk.Label(window, text="Number of Accounts")
-num_accounts_entry = tk.ttk.Entry(window)
+num_accounts_label = tk.ttk.Label(window, text="Number of Accounts", borderwidth=0)
+num_accounts_entry = tk.Entry(window, width=27, relief=tk.FLAT, bg='#F9F9F9', fg='black',
+                              insertbackground='black')
 
 api_key_label = tk.ttk.Label(window, text="CAPMONSTER API Key")
 api_key_entry = tk.ttk.Entry(window)
@@ -182,15 +174,16 @@ save_button = tk.Button(window,
                         )
 
 # Add the widgets to the window
-num_accounts_label.pack(pady=10)
-num_accounts_entry.pack(pady=5)
-api_key_label.pack(pady=10)
-api_key_entry.pack(pady=5)
-region_label.pack(pady=10)
-region_combobox.pack(pady=5)
-generate_button.pack(pady=20)
-account_treeview.pack(pady=10)
-save_button.pack(pady=10)
+num_accounts_label.grid(row=2, column=0, padx=50, pady=10, sticky="w")
+num_accounts_entry.grid(row=2, column=0, padx=90, pady=10, ipady=5, sticky="e")
+
+# api_key_label.pack(pady=10)
+# api_key_entry.pack(pady=5)
+# region_label.pack(pady=10)
+# region_combobox.pack(pady=5)
+# generate_button.pack(pady=20)
+# account_treeview.pack(pady=10)
+# save_button.pack(pady=10)
 
 # Run the event loop
 window.mainloop()
