@@ -12,7 +12,6 @@ You can download the exe version [here](https://github.com/Kirbyy1/riot-account-
 
 -   Generate multiple accounts with randomized usernames and passwords
 -   Select the region for the generated accounts
--   View the generated accounts in a treeview
 -   Save the generated accounts to a text file
 - It works for every region
 
